@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexandre Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <script src="https://kit.fontawesome.com/f00e4312c4.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">My Services</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="index.html#work" class="nav-link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h1 class="section-title section-title-intro">
+                <strong>Movie Database</strong>
+            </h1>
+            <p class="section-subtitle section-subtitle-intro">HTML, CSS, Javascript</p>
+            <img src="img/movie-db-01.png" alt="movie database image" class="intro-img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>This is a movie database, that consumes the 
+                <a href="https://rapidapi.com/apidojo/api/imdb8/" target="_blank">
+                    IMDB movie api.
+                </a>
+                To explore the website click
+                <a href="https://movie-website-cm8e4.ondigitalocean.app/" target="_blank">
+                    here.
+                </a>
+            </p>
+            <p>In the home page there are two sliders, one presents the top 8 rated movies and the other presents
+                the 8 most popular movies at the moment. Each card presents the poster, name and date of release.
+            </p>
+            <img src="img/movie-db-01.png" alt="home page movie database">
+            <p>In the top navigation bar there are buttons of diferent genres where you can click and see the 8 most
+                popular recent movies of that genre.
+            </p>
+            <img src="img/movie-db-02.png" alt="search page movie database">
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:limamalexandre@gmail.com" class="footer-link">limamalexandre@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://www.linkedin.com/in/limamalexandre" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://github.com/limamalexandre" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

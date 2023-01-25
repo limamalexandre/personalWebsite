@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexandre Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <script src="https://kit.fontawesome.com/f00e4312c4.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">My Services</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="index.html#work" class="nav-link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h1 class="section-title section-title-intro">
+                <strong>Tic Tac Toe Game</strong>
+            </h1>
+            <p class="section-subtitle section-subtitle-intro">Angular, HTML, CSS, Javascript</p>
+            <img src="img/tic-tac-toe-01.png" alt="tic tac toe image" class="intro-img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>This is a tic tac toe game made using the Angular framework. When the game starts there is an 
+                indication on the top of who's turn is to play, which updates after each move.
+            </p>
+            <img src="img/tic-tac-toe-02.png" alt="winner screen">
+            <p>After each move the game checks the board to see if there's a winner and if that's the case then
+                a message is shown saying which of the players won. If there's no winner and the maximum number
+                of moves was already made, it will be considered a draw and a message will be shown accordingly.
+            </p>
+            <p>A new game can be started by pressing the "Start new game" button placed above the board.</p>
+            <img src="img/tic-tac-toe-03.png" alt="draw screen">
+        </div>        
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:limamalexandre@gmail.com" class="footer-link">limamalexandre@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://www.linkedin.com/in/limamalexandre" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://github.com/limamalexandre" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

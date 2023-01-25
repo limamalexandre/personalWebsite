@@ -401,7 +401,7 @@ h3 {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    margin-left: 6.5em; /* remove if I have more than two projects presented in the my work section */
+    /* margin-left: 6.5em; */ /* remove if I have more than two projects presented in the my work section */
 }
 
 .portfolio-item:focus {
@@ -411,7 +411,7 @@ h3 {
 
 .portfolio-img:hover,
 .portfolio-item:focus .portfolio-img {
-    transform: scale(1.125);
+    transform: scale(1.05);
     opacity: .75;
 }
 
@@ -467,8 +467,9 @@ h3 {
     margin: 0 auto;
 }
 
-.portfolio-item-individual p {
-    max-width: 600px;
+.portfolio-item-individual p,
+.portfolio-item-individual img {
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
