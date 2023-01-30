@@ -63,11 +63,11 @@ strong {
     font-weight: var(--fw-bold);
 }
 
-:focus {
+/* :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
-
+ */
 /* Buttons */
 
 .btn {
@@ -390,31 +390,49 @@ h3 {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* repeat(3, 1fr) repeat(auto-fit, minmax(300px, 1fr))*/
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .portfolio-item {
     background: var(--clr-dark);
-    height: 75%;
-    width: 75%;
+    margin-bottom: 2em;
 }
 
 .portfolio-img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    margin-left: 5em; /* remove if I have more than two projects presented in the my work section */
 }
 
-.portfolio-item:focus {
-    position: relative;
-    z-index: 2;
-}
-
-.portfolio-img:hover,
-.portfolio-item:focus .portfolio-img {
-    transform: scale(1.05);
-    opacity: .75;
+@media (min-width: 600px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .portfolio-item {
+        background: var(--clr-dark);
+        height: 75%;
+        width: 75%;
+    }
+    
+    .portfolio-img {
+        transition: 
+            transform 750ms cubic-bezier(.5, 0, .5, 1),
+            opacity 250ms linear;
+        margin-left: 5em; /* remove if I have more than two projects presented in the my work section */
+    }
+    
+    .portfolio-item:focus {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .portfolio-img:hover,
+    .portfolio-item:focus .portfolio-img {
+        transform: scale(1.05);
+        opacity: .75;
+    }
 }
 
 /* Footer */
@@ -465,13 +483,28 @@ h3 {
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .portfolio-item-individual p,
 .portfolio-item-individual img {
-    max-width: 700px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 600px) {
+    .portfolio-item-individual {
+        padding: 0 2em 2em;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .portfolio-item-individual p,
+    .portfolio-item-individual img {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
 }
